@@ -1,0 +1,367 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat May 16 14:46:11 2026
+| Host         : DESKTOP-HM5HD61 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   301 |
+| Unused register locations in slices containing registers |   306 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |          299 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              82 |           31 |
+| No           | No                    | Yes                    |             550 |          183 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |           23692 |         3566 |
+| Yes          | No                    | Yes                    |          118560 |        16990 |
+| Yes          | Yes                   | No                     |             138 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                 Enable Signal                 |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | sha1_loop[23].sha1_inst/E[0]                  |                                                           |                2 |             12 |
+|  clk_IBUF_BUFG | byte_count[6]_i_1_n_0                         | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |                3 |             14 |
+|  clk_IBUF_BUFG | buffer[15][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[2][7]_i_1_n_0                          |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[14][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[24][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[16][7]_i_1_n_0                         |                                                           |                4 |             16 |
+|  clk_IBUF_BUFG | buffer[1][7]_i_1_n_0                          |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[62][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[17][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[13][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[12][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[10][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[32][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[33][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[76][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[30][7]_i_1_n_0                         |                                                           |                4 |             16 |
+|  clk_IBUF_BUFG | buffer[11][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[26][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[69][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[5][7]_i_1_n_0                          |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[28][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[19][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[73][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[18][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[29][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[27][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[22][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[25][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[74][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[20][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | uart_tx_inst/tx_data_latch0                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |                3 |             16 |
+|  clk_IBUF_BUFG | uart_rx_inst/rx_data_valid01_out              | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |                4 |             16 |
+|  clk_IBUF_BUFG | buffer[21][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[23][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[31][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[34][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[0][7]_i_1_n_0                          |                                                           |                5 |             16 |
+|  clk_IBUF_BUFG | buffer[35][7]_i_1_n_0                         |                                                           |                4 |             16 |
+|  clk_IBUF_BUFG | buffer[52][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[7][7]_i_1_n_0                          |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[59][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[38][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[44][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[54][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[42][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[41][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[45][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[55][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[56][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[63][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[70][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[71][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[43][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[60][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[65][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[78][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[61][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[47][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[36][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[49][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[3][7]_i_1_n_0                          |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[4][7]_i_1_n_0                          |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[37][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[40][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[68][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[67][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[51][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[58][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[77][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[79][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[39][7]_i_1_n_0                         |                                                           |                5 |             16 |
+|  clk_IBUF_BUFG | buffer[48][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[50][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[72][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[6][7]_i_1_n_0                          |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[46][7]_i_1_n_0                         |                                                           |                5 |             16 |
+|  clk_IBUF_BUFG | buffer[53][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[66][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[8][7]_i_1_n_0                          |                                                           |                4 |             16 |
+|  clk_IBUF_BUFG | buffer[75][7]_i_1_n_0                         |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | buffer[57][7]_i_1_n_0                         |                                                           |                3 |             16 |
+|  clk_IBUF_BUFG | buffer[64][7]_i_1_n_0                         |                                                           |                1 |             16 |
+|  clk_IBUF_BUFG | buffer[9][7]_i_1_n_0                          |                                                           |                2 |             16 |
+|  clk_IBUF_BUFG | uart_tx_inst/tx_data_reg[0][0]                | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |                4 |             26 |
+|  clk_IBUF_BUFG | uart_tx_inst/E[0]                             | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               11 |             48 |
+|  clk_IBUF_BUFG | running_timer[31]_i_2_n_0                     | running_timer[31]_i_1_n_0                                 |                9 |             64 |
+|  clk_IBUF_BUFG | sha1_loop[23].sha1_inst/nonce_0_reg[1]_rep__0 | nonce_0[30]_i_1_n_0                                       |                9 |             74 |
+|  clk_IBUF_BUFG |                                               |                                                           |               31 |             82 |
+|  clk_IBUF_BUFG | sha1_loop[20].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[61].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[36].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[16].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[62].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[35].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[10].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[63].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[34].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[11].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[64].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[0].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[22].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[39].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[32].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[44].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[1].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[3].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[21].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[40].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[31].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[42].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[12].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[43].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[66].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[52].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[30].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[53].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[19].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[68].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[45].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[46].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[2].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[47].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[29].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[48].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[69].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[49].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[28].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[4].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[17].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[50].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[6].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[51].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[27].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[65].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[7].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[26].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[13].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[54].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[59].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[25].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[18].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[55].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[56].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[67].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[8].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[57].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[58].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[15].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[41].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[33].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[9].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[14].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[23].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[5].sha1_inst/H_we                   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[60].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[24].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[38].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[37].sha1_inst/H_we                  | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            320 |
+|  clk_IBUF_BUFG | sha1_loop[27].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               44 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[28].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               48 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[29].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               54 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[2].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[30].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               50 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[31].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[32].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               42 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[33].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               42 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[34].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[35].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               55 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[36].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[37].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[38].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               42 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[0].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               41 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[39].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[44].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               45 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[3].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               41 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[40].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               50 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[41].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               50 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[42].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               50 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[43].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               54 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[52].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               48 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[45].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               53 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[46].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               38 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[47].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               48 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[48].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               39 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[49].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[4].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[50].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               38 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[51].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[66].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               49 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[65].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               48 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[53].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               42 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[54].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[55].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[56].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[57].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               42 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[58].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               53 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[59].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               35 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[67].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               44 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[5].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               48 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[60].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               50 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[61].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               40 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[62].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               45 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[63].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               55 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[64].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               49 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[22].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               53 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[68].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               41 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[21].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               39 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[25].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               58 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[6].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               43 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[7].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[8].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               46 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[9].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[10].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[11].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               43 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[12].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               45 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[13].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               51 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[14].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               54 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[15].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               53 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[16].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[69].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               52 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[17].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               41 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[24].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[18].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               56 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[19].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               45 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[1].sha1_inst/w_mem_inst/E[0]        | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[20].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               45 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[23].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               44 |            348 |
+|  clk_IBUF_BUFG | sha1_loop[26].sha1_inst/w_mem_inst/E[0]       | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |               47 |            348 |
+|  clk_IBUF_BUFG |                                               | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              183 |            550 |
+|  clk_IBUF_BUFG | sha1_loop[49].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              143 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[48].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              145 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[46].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              132 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[45].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              167 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[52].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[43].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              161 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[42].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              154 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[41].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[40].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              165 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[3].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[44].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              159 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[39].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              162 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[0].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[8].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              150 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[19].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              164 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[26].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[7].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              164 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[16].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              134 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[27].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              154 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[14].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              175 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[28].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[4].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[6].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              156 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[29].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              150 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[13].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              147 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[69].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              161 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[2].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[1].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              166 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[17].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              159 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[30].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[18].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              168 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[31].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              152 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[12].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              156 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[47].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              150 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[25].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              150 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[21].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[20].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[32].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              161 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              163 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[33].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              165 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[24].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              159 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[34].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              165 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[11].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              150 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[22].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              159 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[64].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              149 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[63].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[35].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[23].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[36].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              152 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[15].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[10].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              153 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[62].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              160 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[37].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              145 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[38].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[9].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              138 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[61].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              151 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[60].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              167 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[5].sha1_inst/w_mem_inst/w_mem_we    | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              156 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[67].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              162 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[59].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              133 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[58].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              144 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[57].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              155 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[56].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              158 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[55].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              149 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[54].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              164 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[53].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              156 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[65].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              161 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[66].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              159 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[51].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              157 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[50].sha1_inst/w_mem_inst/w_mem_we   | sha1_loop[68].sha1_inst/w_mem_inst/w_mem_reg[1][0]_0_BUFG |              136 |           1024 |
+|  clk_IBUF_BUFG | sha1_loop[6].sha1_inst/E[0]                   |                                                           |             3400 |          22400 |
++----------------+-----------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,1087 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 6988
+License: Customer
+
+Current time: 	Sat May 16 09:56:28 BRT 2026
+Time zone: 	Brasilia Time (America/Sao_Paulo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 143 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Emerson
+User home directory: C:/Users/Emerson
+User working directory: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1
+User country: 	BR
+User language: 	pt
+User locale: 	pt_BR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Emerson/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Emerson/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Emerson/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/vivado.log
+Vivado journal file location: 	C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/.Xil/Vivado-6988-DESKTOP-HM5HD61
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	144 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 547 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 70 MB (+70632kb) [00:00:07]
+// [Engine Memory]: 485 MB (+356882kb) [00:00:07]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Emerson\Documents\fpga\project_kintex_miner\project_1\project_1.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.xpr 
+// [Engine Memory]: 533 MB (+24637kb) [00:00:09]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 579 MB. GUI used memory: 36 MB. Current time: 5/16/26 9:56:30 AM BRT
+// [Engine Memory]: 594 MB (+36887kb) [00:00:13]
+// [Engine Memory]: 628 MB (+3646kb) [00:00:14]
+// Project name: project_1; location: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1; part: xc7k325tffg676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 798.902 ; gain = 114.207 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 90 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 81 MB (+8163kb) [00:01:47]
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+dismissDialog("Auto Connect"); // bx (ck)
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, ck)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // t (O, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_XVC_TARGET, "Add Xilinx Virtual Cable (XVC)..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_XVC_TARGET
+// a (ck): Add Virtual Cable: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Command: 'open_hw_target -xvc_url localhost:2542'
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+dismissDialog("Add Virtual Cable"); // a (ck)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// [GUI Memory]: 85 MB (+94kb) [00:02:09]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target -xvc_url localhost:2542 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/localhost:2542 
+// bx (ck):  Add XVC Target : addNotify
+// [Engine Memory]: 1,298 MB (+669630kb) [00:02:10]
+dismissDialog("Add XVC Target"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 48 MB. Current time: 5/16/26 9:58:30 AM BRT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k325t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1487.527 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {s25fl256l-spi-x1_x2_x4}] 0] 
+// Tcl Message: ERROR: [Labtools 27-2284] Part name cannot be empty 
+// 'I' command handler elapsed time: 83 seconds
+// Elapsed time: 82 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 272 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 32 seconds
+selectCodeEditor("top.v", 277, 281); // ce (w, ck)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,347 MB. GUI used memory: 50 MB. Current time: 5/16/26 10:06:06 AM BRT
+// Elapsed time: 17 seconds
+selectCodeEditor("top.v", 113, 297); // ce (w, ck)
+selectCodeEditor("top.v", 113, 297, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+// [GUI Memory]: 92 MB (+2158kb) [00:11:39]
+// Elapsed time: 153 seconds
+selectCodeEditor("top.v", 125, 354); // ce (w, ck)
+selectCodeEditor("top.v", 125, 354, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 97 MB (+1376kb) [00:20:56]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 102 MB (+122kb) [00:23:59]
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 876 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uart_rx_inst : uart_rx (uart_rx.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("top.v", 115, 425); // ce (w, ck)
+selectCodeEditor("top.v", 115, 425, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 411 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,363 MB (+249kb) [00:34:43]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 16 10:31:01 2026] Launched synth_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/synth_1/runme.log [Sat May 16 10:31:01 2026] Launched impl_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,363 MB. GUI used memory: 52 MB. Current time: 5/16/26 10:36:09 AM BRT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 537ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 1030 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k325t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 1525.145 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {s25fl256l-spi-x1_x2_x4}] 0] 
+// Tcl Message: ERROR: [Labtools 27-2284] Part name cannot be empty 
+// 'I' command handler elapsed time: 72 seconds
+// Elapsed time: 70 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 307 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// 'c' command handler elapsed time: 3 seconds
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_Cancel", "Cancel"); // JButton (A, G)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 26, false); // u (O, ck)
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,485 MB (+56901kb) [00:59:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,508 MB. GUI used memory: 53 MB. Current time: 5/16/26 10:55:20 AM BRT
+// [Engine Memory]: 1,647 MB (+91336kb) [00:59:05]
+// [Engine Memory]: 1,962 MB (+244691kb) [00:59:10]
+// [Engine Memory]: 2,177 MB (+122449kb) [00:59:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,200 MB. GUI used memory: 53 MB. Current time: 5/16/26 10:55:35 AM BRT
+// [Engine Memory]: 2,843 MB (+583798kb) [00:59:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,961 MB. GUI used memory: 53 MB. Current time: 5/16/26 10:55:50 AM BRT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,973 MB. GUI used memory: 53 MB. Current time: 5/16/26 10:55:54 AM BRT
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,987 MB (+2067kb) [00:59:37]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 14909 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7k325tffg676-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3291.012 ; gain = 131.312 
+// Tcl Message: Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3291.012 ; gain = 131.312 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// ExpRunCommands.openImplResults elapsed time: 41.9s
+// TclEventType: DRC_ADDED
+// Device view-level: 0,0
+// Tcl Message: open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:42 . Memory (MB): peak = 3324.273 ; gain = 1799.129 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 113 MB (+5587kb) [00:59:38]
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 121 MB (+2766kb) [00:59:40]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 128 MB (+945kb) [00:59:41]
+// [GUI Memory]: 137 MB (+2957kb) [00:59:41]
+// [GUI Memory]: 148 MB (+4069kb) [00:59:42]
+// [Engine Memory]: 3,145 MB (+9350kb) [00:59:42]
+// [GUI Memory]: 157 MB (+1160kb) [00:59:42]
+// [GUI Memory]: 166 MB (+922kb) [00:59:43]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 185 MB (+11443kb) [00:59:46]
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+// [Engine Memory]: 3,402 MB (+103963kb) [00:59:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,410 MB. GUI used memory: 156 MB. Current time: 5/16/26 10:56:10 AM BRT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 16.2s
+// Device view-level: 0,0
+// Elapsed time: 257 seconds
+selectCheckBox(RDIResource.BaseDialogUtils_OPEN_IN_NEW_TAB, "Open in a new tab", false); // g (a): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'cq' command handler elapsed time: 208 seconds
+dismissDialog("Report Utilization"); // a (ck)
+// Tcl Message: report_utilization -name utilization_1 
+// bx (ck):  Report Utilization : addNotify
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 194 MB (+427kb) [01:03:18]
+// [GUI Memory]: 205 MB (+359kb) [01:03:18]
+// [GUI Memory]: 215 MB (+122kb) [01:03:19]
+// [GUI Memory]: 226 MB (+723kb) [01:03:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,498 MB. GUI used memory: 156 MB. Current time: 5/16/26 10:59:40 AM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,499 MB. GUI used memory: 162 MB. Current time: 5/16/26 10:59:41 AM BRT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3797.527 ; gain = 34.266 
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3797.527 ; gain = 34.266 
+dismissDialog("Report Utilization"); // bx (ck)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // k (O, ck)
+// Elapsed time: 34 seconds
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectCodeEditor("top.v", 162, 311); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 115, 313); // ce (w, ck)
+selectCodeEditor("top.v", 115, 313, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "- MAX_CORE"); // l (aQ, ck)
+selectCodeEditor("top.v", 360, 298); // ce (w, ck)
+selectCodeEditor("top.v", 285, 296, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("top.v", 364, 297); // ce (w, ck)
+selectCodeEditor("top.v", 288, 295, true, false, false, false, false); // ce (w, ck) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 301, 297); // ce (w, ck)
+selectCodeEditor("top.v", 224, 296, true, false, false, false, false); // ce (w, ck) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 399, 246); // ce (w, ck)
+selectCodeEditor("top.v", 320, 245, true, false, false, false, false); // ce (w, ck) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 234, 155); // ce (w, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+selectCodeEditor("top.v", 196, 282); // ce (w, ck)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectCodeEditor("top.v", 156, 316); // ce (w, ck)
+selectCodeEditor("top.v", 156, 316, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top.v", 164, 311); // ce (w, ck)
+selectCodeEditor("top.v", 164, 311, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 16 11:01:55 2026] Launched synth_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/synth_1/runme.log [Sat May 16 11:01:55 2026] Launched impl_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/runme.log 
+// Elapsed time: 81 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ck)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 77 MB. Current time: 5/16/26 11:03:19 AM BRT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,508 MB. GUI used memory: 78 MB. Current time: 5/16/26 11:03:19 AM BRT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (ck):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (ck)
+// Elapsed time: 196 seconds
+selectCodeEditor("top.v", 108, 335); // ce (w, ck)
+selectCodeEditor("top.v", 108, 335, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 556ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 1417 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k325t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 3804.203 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {s25fl256l-spi-x1_x2_x4}] 0] 
+// Tcl Message: ERROR: [Labtools 27-2284] Part name cannot be empty 
+// 'I' command handler elapsed time: 68 seconds
+// Elapsed time: 66 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("top.v", 199, 161); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 29 seconds
+selectCodeEditor("top.v", 160, 164); // ce (w, ck)
+selectCodeEditor("top.v", 167, 176); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 59 MB. Current time: 5/16/26 11:33:22 AM BRT
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 156, 313); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 16 11:33:35 2026] Launched synth_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/synth_1/runme.log [Sat May 16 11:33:35 2026] Launched impl_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 355ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 60 MB. Current time: 5/16/26 12:03:23 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 57 MB. Current time: 5/16/26 12:33:23 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 57 MB. Current time: 5/16/26 1:03:23 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 57 MB. Current time: 5/16/26 1:33:23 PM BRT
+// Elapsed time: 8863 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 26, false); // u (O, ck)
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 57 MB. Current time: 5/16/26 2:02:03 PM BRT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 21088 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3924.898 ; gain = 120.695 
+// Tcl Message: Restored from archive | CPU: 20.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3924.898 ; gain = 120.695 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// ExpRunCommands.openImplResults elapsed time: 42.1s
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:42 . Memory (MB): peak = 3935.270 ; gain = 131.066 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ck)
+// bx (ck):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 238 MB (+475kb) [04:06:00]
+// [GUI Memory]: 251 MB (+936kb) [04:06:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 186 MB. Current time: 5/16/26 2:02:23 PM BRT
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:32 ; elapsed = 00:00:11 . Memory (MB): peak = 4367.137 ; gain = 266.113 
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:32 ; elapsed = 00:00:11 . Memory (MB): peak = 4367.137 ; gain = 266.113 
+// Elapsed time: 11 seconds
+dismissDialog("Report Utilization"); // bx (ck)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 21.9s
+// Device view-level: 0,0
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 27, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+dismissDialog("Report Utilization"); // a (ck)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // k (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k325t_0"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k325t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 4509.746 ; gain = 0.078 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {s25fl256l-spi-x1_x2_x4}] 0] 
+// Tcl Message: ERROR: [Labtools 27-2284] Part name cannot be empty 
+// 'I' command handler elapsed time: 72 seconds
+// Elapsed time: 70 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 26, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+dismissDialog("Report Utilization"); // a (ck)
+// Elapsed time: 236 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uart_rx_inst : uart_rx (uart_rx.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uart_rx_inst : uart_rx (uart_rx.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uart_tx_inst : uart_tx (uart_tx.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uart_tx_inst : uart_tx (uart_tx.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("nonce_bcd_simple.v", 334, 311); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 351, 315); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 351, 315, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'c'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 135, 330); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 135, 330, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 60, 364); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 60, 364, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("nonce_bcd_simple.v", 98, 367); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 175, 369); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 171, 348); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 171, 348, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("nonce_bcd_simple.v", 122, 326); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 175, 332); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("nonce_bcd_simple.v", 337, 330); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 316, 358); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("nonce_bcd_simple.v", 315, 363); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 315, 363, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("nonce_bcd_simple.v", 393, 314); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("nonce_bcd_simple.v", 70, 263); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 70, 263, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("nonce_bcd_simple.v", 97, 265); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 79, 422); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 79, 422, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'c'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 100, 92); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 104, 398); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 103, 417); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 104, 434); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 102, 297); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 106, 264); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 106, 385); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 105, 402); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 102, 420); // ce (w, ck)
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("nonce_bcd_simple.v", 258, 228); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'v'); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 274, 230); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 298, 229); // ce (w, ck)
+selectCodeEditor("nonce_bcd_simple.v", 298, 229, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "nonce_bcd_simple.v", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. ]", 15, true); // ah (O, ck) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. ]", 15); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:31]. ]", 16, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:31]. ]", 16, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:32]. ]", 17, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:32]. ]", 17, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6157] synthesizing module 'top' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/top.v:10]. ]", 20, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6157] synthesizing module 'top' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/top.v:10]. , [Synth 8-6157] synthesizing module 'sha1_core' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/sha1_core.v:41]. ]", 22, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6157] synthesizing module 'top' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/top.v:10]. , [Synth 8-6157] synthesizing module 'nonce_bcd_simple' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:7]. ]", 21, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6157] synthesizing module 'top' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/top.v:10]. , [Synth 8-6157] synthesizing module 'nonce_bcd_simple' [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:7]. ]", 21, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:31]. ]", 16, false); // ah (O, ck)
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:31]. ]", 16, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+// Elapsed time: 75 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:30]. , [Synth 8-2292] literal value truncated to fit in 32 bits [C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.srcs/sources_1/nonce_bcd_simple.v:31]. ]", 16, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 80 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 57 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 2); // k (j, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("top.v", 870, 347); // ce (w, ck)
+selectCodeEditor("top.v", 219, 261); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 33 seconds
+selectCodeEditor("top.v", 404, 328); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 343, 313); // ce (w, ck)
+selectCodeEditor("top.v", 343, 313, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 332, 366); // ce (w, ck)
+selectCodeEditor("top.v", 332, 366, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top.v", 701, 368); // ce (w, ck)
+selectCodeEditor("top.v", 701, 368, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top.v", 193, 362); // ce (w, ck)
+selectCodeEditor("top.v", 193, 362, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+selectCodeEditor("top.v", 639, 362); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("top.v", 657, 366); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("top.v", 160, 368); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 237, 367); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+// Elapsed time: 69 seconds
+selectCodeEditor("top.v", 159, 368); // ce (w, ck)
+selectCodeEditor("top.v", 558, 367); // ce (w, ck)
+selectCodeEditor("top.v", 340, 390); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 71 seconds
+selectCodeEditor("top.v", 207, 384); // ce (w, ck)
+selectCodeEditor("top.v", 160, 364); // ce (w, ck)
+selectCodeEditor("top.v", 197, 385); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 169, 367); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 144, 377); // ce (w, ck)
+selectCodeEditor("top.v", 562, 366); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top.v", 166, 368); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 201, 386); // ce (w, ck)
+selectCodeEditor("top.v", 168, 363); // ce (w, ck)
+selectCodeEditor("top.v", 166, 375); // ce (w, ck)
+selectCodeEditor("top.v", 168, 363); // ce (w, ck)
+selectCodeEditor("top.v", 164, 382); // ce (w, ck)
+selectCodeEditor("top.v", 166, 365); // ce (w, ck)
+selectCodeEditor("top.v", 167, 383); // ce (w, ck)
+selectCodeEditor("top.v", 169, 369); // ce (w, ck)
+selectCodeEditor("top.v", 168, 383); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 56 seconds
+selectCodeEditor("top.v", 3, 280); // ce (w, ck)
+selectCodeEditor("top.v", 544, 381, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 20 seconds
+selectCodeEditor("top.v", 788, 312); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("top.v", 199, 231); // ce (w, ck)
+selectCodeEditor("top.v", 208, 232); // ce (w, ck)
+selectCodeEditor("top.v", 208, 232, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top.v", 238, 229); // ce (w, ck)
+selectCodeEditor("top.v", 385, 230); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top.v", 201, 245); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 251, 332); // ce (w, ck)
+selectCodeEditor("top.v", 174, 383); // ce (w, ck)
+selectCodeEditor("top.v", 77, 350); // ce (w, ck)
+selectCodeEditor("top.v", 234, 349); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 290, 368); // ce (w, ck)
+selectCodeEditor("top.v", 255, 366); // ce (w, ck)
+selectCodeEditor("top.v", 255, 366, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // ce (w, ck)
+selectCodeEditor("top.v", 271, 382); // ce (w, ck)
+typeControlKey((HResource) null, "top.v", 'v'); // ce (w, ck)
+selectCodeEditor("top.v", 341, 319); // ce (w, ck)
+selectCodeEditor("top.v", 345, 315); // ce (w, ck)
+selectCodeEditor("top.v", 335, 312); // ce (w, ck)
+selectCodeEditor("top.v", 335, 312, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top.v", 398, 331); // ce (w, ck)
+selectCodeEditor("top.v", 614, 313); // ce (w, ck)
+selectCodeEditor("top.v", 584, 337); // ce (w, ck)
+selectCodeEditor("top.v", 628, 360); // ce (w, ck)
+selectCodeEditor("top.v", 457, 367); // ce (w, ck)
+selectCodeEditor("top.v", 436, 383); // ce (w, ck)
+selectCodeEditor("top.v", 531, 383); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 52, 414); // ce (w, ck)
+selectCodeEditor("top.v", 487, 415); // ce (w, ck)
+selectCodeEditor("top.v", 434, 457); // ce (w, ck)
+selectCodeEditor("top.v", 395, 398); // ce (w, ck)
+selectCodeEditor("top.v", 482, 435); // ce (w, ck)
+selectCodeEditor("top.v", 533, 431); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 814, 358); // ce (w, ck)
+selectCodeEditor("top.v", 481, 366); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 168, 297); // ce (w, ck)
+selectCodeEditor("top.v", 173, 381); // ce (w, ck)
+selectCodeEditor("top.v", 58, 364); // ce (w, ck)
+selectCodeEditor("top.v", 313, 366); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("top.v", 206, 399); // ce (w, ck)
+selectCodeEditor("top.v", 140, 417); // ce (w, ck)
+selectCodeEditor("top.v", 469, 282); // ce (w, ck)
+selectCodeEditor("top.v", 246, 381); // ce (w, ck)
+selectCodeEditor("top.v", 299, 396); // ce (w, ck)
+selectCodeEditor("top.v", 489, 471); // ce (w, ck)
+selectCodeEditor("top.v", 308, 452); // ce (w, ck)
+selectCodeEditor("top.v", 530, 450); // ce (w, ck)
+selectCodeEditor("top.v", 470, 468); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 264, 346); // ce (w, ck)
+selectCodeEditor("top.v", 350, 344); // ce (w, ck)
+selectCodeEditor("top.v", 53, 343); // ce (w, ck)
+selectCodeEditor("top.v", 377, 468); // ce (w, ck)
+selectCodeEditor("top.v", 581, 434); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top.v", 165, 347); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 105, 414); // ce (w, ck)
+selectCodeEditor("top.v", 161, 433); // ce (w, ck)
+selectCodeEditor("top.v", 380, 412); // ce (w, ck)
+selectCodeEditor("top.v", 462, 385); // ce (w, ck)
+selectCodeEditor("top.v", 405, 451); // ce (w, ck)
+selectCodeEditor("top.v", 267, 470); // ce (w, ck)
+selectCodeEditor("top.v", 397, 466); // ce (w, ck)
+selectCodeEditor("top.v", 500, 402); // ce (w, ck)
+selectCodeEditor("top.v", 129, 394); // ce (w, ck)
+selectCodeEditor("top.v", 153, 382); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 310, 432); // ce (w, ck)
+selectCodeEditor("top.v", 500, 433); // ce (w, ck)
+selectCodeEditor("top.v", 53, 431); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top.v", 282, 417); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 280, 429); // ce (w, ck)
+selectCodeEditor("top.v", 390, 417); // ce (w, ck)
+selectCodeEditor("top.v", 476, 434); // ce (w, ck)
+selectCodeEditor("top.v", 345, 380); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 113, 416); // ce (w, ck)
+selectCodeEditor("top.v", 105, 382); // ce (w, ck)
+selectCodeEditor("top.v", 245, 384); // ce (w, ck)
+selectCodeEditor("top.v", 351, 430); // ce (w, ck)
+selectCodeEditor("top.v", 496, 420); // ce (w, ck)
+selectCodeEditor("top.v", 256, 415); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.v", 211, 417); // ce (w, ck)
+selectCodeEditor("top.v", 290, 416); // ce (w, ck)
+selectCodeEditor("top.v", 696, 420); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 201, 368); // ce (w, ck)
+selectCodeEditor("top.v", 315, 350); // ce (w, ck)
+selectCodeEditor("top.v", 427, 349); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.v", 469, 433); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top.v", 307, 450); // ce (w, ck)
+selectCodeEditor("top.v", 195, 398); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 322, 415); // ce (w, ck)
+selectCodeEditor("top.v", 208, 421); // ce (w, ck)
+selectCodeEditor("top.v", 432, 415); // ce (w, ck)
+selectCodeEditor("top.v", 459, 436); // ce (w, ck)
+selectCodeEditor("top.v", 203, 485); // ce (w, ck)
+selectCodeEditor("top.v", 198, 485); // ce (w, ck)
+selectCodeEditor("top.v", 588, 485); // ce (w, ck)
+selectCodeEditor("top.v", 582, 487); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 3,508 MB. GUI used memory: 69 MB. Current time: 5/16/26 2:31:09 PM BRT
+// Engine heap size: 3,508 MB. GUI used memory: 70 MB. Current time: 5/16/26 2:31:09 PM BRT
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// Tcl Message: close_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4528.793 ; gain = 0.000 
+dismissDialog("Confirm Close"); // A (ck)
+selectCodeEditor("top.v", 284, 330); // ce (w, ck)
+selectCodeEditor("top.v", 354, 322); // ce (w, ck)
+selectCodeEditor("top.v", 312, 217); // ce (w, ck)
+selectCodeEditor("top.v", 313, 271); // ce (w, ck)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+selectCodeEditor("top.v", 137, 220); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat May 16 14:31:29 2026] Launched synth_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/synth_1/runme.log [Sat May 16 14:31:29 2026] Launched impl_1... Run output will be captured here: C:/Users/Emerson/Documents/fpga/project_kintex_miner/project_1/project_1.runs/impl_1/runme.log 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), sha1_loop[15].sha1_inst : sha1_core (sha1_core.v)]", 89, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), sha1_loop[15].sha1_inst : sha1_core (sha1_core.v)]", 89, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), sha1_loop[15].sha1_inst : sha1_core (sha1_core.v), w_mem_inst : sha1_w_mem (sha1_w_mem.v)]", 90, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), sha1_loop[15].sha1_inst : sha1_core (sha1_core.v), w_mem_inst : sha1_w_mem (sha1_w_mem.v)]", 90, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 78 seconds
+selectCodeEditor("top.v", 574, 208); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 383ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 388 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), bcd_loop[0].bcd_inst : nonce_bcd_simple (nonce_bcd_simple.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click

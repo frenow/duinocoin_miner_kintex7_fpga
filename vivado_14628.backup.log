@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 15 14:45:01 2026
+# Process ID: 14628
+# Current directory: C:/Users/Emerson/Documents/fpga/Test01_led_key/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6552 C:\Users\Emerson\Documents\fpga\Test01_led_key\project_1\project_1.xpr
+# Log file: C:/Users/Emerson/Documents/fpga/Test01_led_key/project_1/vivado.log
+# Journal file: C:/Users/Emerson/Documents/fpga/Test01_led_key/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Emerson/Documents/fpga/Test01_led_key/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 788.605 ; gain = 86.477
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target -xvc_url localhost:2542
+ERROR: [Labtools 27-3094] Timeout while opening port to xvc server localhost:2542.
+ERROR: [Labtoolstcl 44-142] There is no current hw_target and no option value given for 'hw_target'.
+open_hw_target -xvc_url localhost:2542
+ERROR: [Labtools 27-3094] Timeout while opening port to xvc server localhost:2542.
+ERROR: [Labtoolstcl 44-474] Unable to open target, reverting to current target
+open_hw_target -xvc_url localhost:2542
+ERROR: [Labtools 27-3094] Timeout while opening port to xvc server localhost:2542.
+ERROR: [Labtoolstcl 44-474] Unable to open target, reverting to current target
+open_hw_target -xvc_url localhost:2542
+ERROR: [Labtools 27-3094] Timeout while opening port to xvc server localhost:2542.
+ERROR: [Labtoolstcl 44-474] Unable to open target, reverting to current target
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 14:53:02 2026...
