@@ -2,7 +2,7 @@
 
 **High-performance cryptocurrency miner implementado em FPGA usando 70 cores SHA-1 em paralelo**
 
-![FPGA Kintex-7 Setup](fpga_setup.jpg)
+![FPGA Kintex-7 Setup](kintex7.jpeg)
 
 ---
 
