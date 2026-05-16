@@ -1,5 +1,9 @@
 # 🔥 DuinoCoin FPGA Miner - Kintex-7 XC7K325T
 
+### Did you like the project? Leave a star ⭐ or buy me a coffee 💰. 
+#### DuinoCoin Wallet: frenow 
+#### BTC Wallet: bc1qdf5qhmfymltn8xu52grlnskdelz8unsznljwe5
+
 **High-performance cryptocurrency miner implementado em FPGA usando 70 cores SHA-1 em paralelo**
 
 ![FPGA Kintex-7 Setup](kintex7.jpeg)
